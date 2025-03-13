@@ -1,0 +1,91 @@
+body {
+    background-color: blue;
+}
+
+.box {
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    animation-name: square-to-circle;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+
+}
+
+@keyframes square-to-circle {
+    0% {
+        border-radius: 0;
+        background-color: brown;
+        transform: rotate(0deg);
+        }
+25% {
+    border-radius: 50% 0 0 0;
+    background-color: red;
+    transform: rotate(45deg);
+}
+50% {
+    border-radius: 50% 50% 0 0;
+    background-color: lightcoral;
+    transform: rotate(90deg);
+}
+75% {
+    border-radius: 50% 50% 50% 0;
+    background-color: blueviolet;
+    transform: rotate(135deg);
+}
+100% {
+    border-radius: 50%;
+    background-color: brown;
+    transform: rotate(180);
+}
+
+}
+
+.box2 {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    margin: 150 100 0 0;
+    animation-name: goober;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+@keyframes goober {
+    0% {
+        border-radius: 0;
+        background-color: black;
+        transform: translateX(0%);
+    }
+    25% {
+        border-radius: 10% 0 0 0;
+        background-color: rgb(100, 93, 93);
+        transform: translateX(100%);
+    
+    }
+    50% {
+        border-radius: 10% 10% 0 0;
+        background-color: rgb(163, 151, 151);
+        transform: translateX(200%);
+   
+    }
+    75% {
+        border-radius: 10% 10% 10% 0;
+        background-color: rgb(209, 164, 164);
+        transform: translateX(300%);
+    
+    }
+    100% {
+        border-radius: 10%;
+        background-color: rgb(53, 49, 49);
+        transform: translateX(400%);
+    
+    }
+}
