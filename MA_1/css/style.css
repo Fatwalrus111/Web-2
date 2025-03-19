@@ -1,0 +1,106 @@
+.background {
+    background-color: #4599FE ;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 60px;
+    padding: 10px;
+    background-color: #EE0405; 
+    border: 0; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #2D4046; 
+  }
+
+/* taken from state parks project from last class */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-gap: 1rem; 
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /*learned how to make boxes allign themselves without grid*/
+  .grid-item {
+    display: flex; 
+    background-color: (238, 4, 5);
+    padding: 20px;
+    border: 1px solid #ccc; 
+    box-sizing: border-box;
+  }
+  
+
+  .grid-text { /* I learned about getting text to flow better in this section with things like border box and flex directions */
+    width: 66%;
+    background-color: #B8CAD1;
+    padding: 1rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+ 
+  .grid-image { /* fred learned about shading and creating soft edges on grid boxes, this was not something that I knew before */
+    width: 33%;
+    background-color: #e0f7fa;
+    padding: 1rem; /* I learned about using rem as a measurement */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* I learned about making shadows on boxes */
+  }
+  
+  
+  .grid-image img { /*I learned about how to get the image to fit properly in its designated section */
+    width: 100%; 
+    height: auto; 
+  }
+
+.navmenu{
+    grid-column: 1 / span 3;
+    grid-row: 2;
+  }
+  
+  .nav {
+    list-style-type: none;
+    background-color:#EE0405 ;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+  }
+  ul.nav li {
+    float: none;
+    text-align: center;
+  }
+  
+  .nav li a {
+    text-align: center;
+    color: #2D4046;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color:#4599FE;
+    border-radius: 15px;
+    float: none;
+  }
+  
+  ul.nav a:hover {
+    background-color: #031E49;
+    color: white;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(188, 33, 9);
+    color: white;
+    text-align: center;
+  }
